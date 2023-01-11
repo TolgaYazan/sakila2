@@ -1,0 +1,38 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>ActorSrv</servlet-name>
+    <servlet-class>com.uniyaz.servlet.ActorServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CountryServlet</servlet-name>
+    <servlet-class>com.uniyaz.servlet.CountryServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CountryJsonServlet</servlet-name>
+    <servlet-class>com.uniyaz.servlet.CountryJsonServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ActorSrv</servlet-name>
+    <url-pattern>/ActSrv</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CountryServlet</servlet-name>
+    <url-pattern>/CountryServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CountryJsonServlet</servlet-name>
+    <url-pattern>/CountryJsonServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

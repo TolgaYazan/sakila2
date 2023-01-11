@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila?useTimezone=true&amp;serverTimezone=Turkey</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Turan190708</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <mapping class="com.uniyaz.actor.domain.Actor"></mapping>
+        <mapping class="com.uniyaz.country.domain.Country"></mapping>
+        <mapping class="com.uniyaz.city.domain.City"></mapping>
+        <mapping class="com.uniyaz.film.domain.Film"></mapping>
+        <mapping class="com.uniyaz.filmactor.domain.FilmActor"></mapping>
+    </session-factory>
+</hibernate-configuration>
